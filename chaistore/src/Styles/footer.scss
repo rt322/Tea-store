@@ -1,0 +1,71 @@
+@import "./colors.scss";
+
+footer{
+    width:100%;
+    height:100vh;
+    background-color: $yellow;
+    position:fixed;
+    bottom: 0%;
+    z-index: -1;
+    padding: 13rem 6rem;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    h1{
+        color:$pink;
+        font-size: 62px;
+        font-weight: 300;
+        font-family: $heading;
+        font-style: italic;
+
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    
+
+    a{
+        color:$pink;
+        text-transform: uppercase;
+font-size: 14px;
+font-weight: 500;
+font-family: $heading;
+letter-spacing: 3px;
+transition:all 0.5s;
+    }}
+
+    div{
+        color:$pink;
+       display: flex;
+       flex-direction: column;
+
+
+      &:last-of-type{
+        align-items: flex-end;
+      }
+
+      h5{
+        font-size: 22px;
+        font-family: $heading;
+        font-weight: 500;
+        
+      }
+      a{
+       font-family:cursive;
+        color:$pink;
+      }
+
+    }
+
+}
+.footer{
+    width:100%;
+    height:100vh;
+    background-color: transparent;
+    z-index: -2;
+    position: absolute;
+}

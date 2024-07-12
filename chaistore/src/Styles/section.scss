@@ -1,0 +1,45 @@
+@import "./colors.scss";
+.section{
+padding-top: 15rem;
+
+>div{
+margin: auto;
+max-width: 60rem;
+height:140vh;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+box-sizing: border-box;
+}
+h3{
+    font-size: 54px;
+    font-weight: 300;
+    font-family:$heading ;
+    
+}
+
+p{
+    font-size: 19px;
+    font-family: $heading;
+    line-height: 1.9;
+}
+
+button{
+    font-size: 14px;
+    font-family: $heading;
+   border-radius: 7px;
+   transition: transform 0.4s;
+   letter-spacing: 2px;
+    &:hover{
+        transform: skewX(-20deg);
+    }
+    
+}
+
+
+
+
+
+
+}

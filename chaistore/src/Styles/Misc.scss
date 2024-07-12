@@ -1,0 +1,63 @@
+@import "colors";
+
+.cursor{
+width:26px;
+height:26px;
+border-radius: 50px;
+border-style: solid;
+border-color:red;
+position:absolute;
+transition: transform 0.3s;
+}
+
+
+.logo{
+    position: fixed;
+top:2rem;
+left:2rem;
+width:9rem;
+
+img{
+    width:100%;
+}
+    
+}
+
+.franchisebtn{
+    background-color: $white;
+    color:$pink;
+    position:fixed;
+    top:1rem;
+    right:5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family:$heading;
+    font-size: 24px;
+
+    padding:0.7rem 1rem ;//0.7 vertical 1 horizontal
+    border-radius: 7px;
+    transform-origin: bottom;
+    transition: tranform 0.5s;
+
+    &:hover{
+        transform:skewX(-10deg);
+    }
+}
+
+
+.scrollbtn{
+    position:absolute;
+    left:50%;
+    bottom:5rem;
+    color:$white;
+    transform: translateX(-50%);
+    font-size: 4rem;
+
+   animation: mousescrollAnimation 0.5s linear  infinite alternate ;
+}
+
+@keyframes mousescrollAnimation {
+    to {
+        transform: translate(-50%,-50px);
+    }
+}
